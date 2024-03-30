@@ -45,6 +45,7 @@ console.log(indexFruitObject(17, fruits));
 
 function indexFruitObject(index, fruits) {
     // Your code here
+    return fruits[index];
 }
 
 
@@ -60,6 +61,17 @@ console.log(fruitNames(fruits));
 
 function fruitNames(fruits) {
     // Your code here
+
+    let namesOfFruit = [];
+    let keys = Object.keys(fruits);
+    //console.log(keys);
+
+       // namesOfFruit(fruits["name"]);
+
+    fruitNames(fruits);
+    return namesOfFruit(fruits["name"]);
+
+
 }
 
 /* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
