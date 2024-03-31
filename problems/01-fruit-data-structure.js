@@ -62,14 +62,10 @@ console.log(fruitNames(fruits));
 function fruitNames(fruits) {
     // Your code here
 
-    let namesOfFruit = [];
-    let keys = Object.keys(fruits);
-    //console.log(keys);
-
-       // namesOfFruit(fruits["name"]);
-
-    // fruitNames(fruits);
-    // return namesOfFruit(fruits["name"]);
+    let names =[];
+    names = Object.values(fruits.map(nameFruits => nameFruits.name));
+    return names;
+    console.log(names);
 
 
 }
