@@ -79,6 +79,9 @@ NOTE: Call a function you previously wrote as a helper function.
 
 function getFruitKeys(fruits) {
     // Your code here
+    let keysArr = [];
+    keysArr = Object.keys(firstFruitObject(fruits));
+    return keysArr;
 }
 
 
