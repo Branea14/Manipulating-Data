@@ -96,6 +96,20 @@ console.log(getNutritionsKeys(fruits));
 
 function getNutritionsKeys(fruits) {
     // Your code here
+
+    let newObj = {}
+    newObj = firstFruitObject(fruits);
+   // return newObj;
+
+    let nutritionObject = {}
+    nutrtionObject = newObj[4];
+
+    let nutritionKeys = [];
+    nutritionKeys = Object.keys(nutritionObject);
+    return nutritionKeys;
+
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
