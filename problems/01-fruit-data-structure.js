@@ -68,8 +68,8 @@ function fruitNames(fruits) {
 
        // namesOfFruit(fruits["name"]);
 
-    fruitNames(fruits);
-    return namesOfFruit(fruits["name"]);
+    // fruitNames(fruits);
+    // return namesOfFruit(fruits["name"]);
 
 
 }
