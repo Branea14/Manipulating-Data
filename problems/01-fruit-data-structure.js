@@ -101,11 +101,11 @@ function getNutritionsKeys(fruits) {
     newObj = firstFruitObject(fruits);
    // return newObj;
 
-    let nutritionObject = {}
-    nutrtionObject = newObj[4];
+    // let nutritionObject = {}
+    // nutrtionObject = fruits.nutritions;
 
-    let nutritionKeys = [];
-    nutritionKeys = Object.keys(nutritionObject);
+
+    let nutritionKeys = Object.keys(newObj.nutritions);
     return nutritionKeys;
 
 
