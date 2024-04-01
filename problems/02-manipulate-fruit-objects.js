@@ -38,7 +38,12 @@ console.log(updateKeyName(fruits, "nutritions", "nutrition"));
 */
 
 function updateKeyName(array, oldKey, newKey) {
-    // Your code here
+    return array.map(function (obj){
+        obj[newKey] = obj[oldKey];
+        delete obj[oldKey];
+        return obj;
+    });
+    //console.log(array)
 }
 
 /* 10. `updateIdValues()` - Change all of the "id" values to six-character
