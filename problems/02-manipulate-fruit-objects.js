@@ -24,7 +24,9 @@ console.log(addKeyAndValueToOne(fruits, "color", "red", 1));
 */
 
 function addKeyAndValueToOne(array, key, value, index) {
-
+    let newObject = array[index];
+        newObject[key] = value;
+    return newObject;
 }
 
 /* 09. `updateKeyName()` - Change the old key name to the new key name in all
