@@ -60,14 +60,10 @@ console.log(fruitNames(fruits));
 */
 
 function fruitNames(fruits) {
-    // Your code here
-
     let names =[];
     names = Object.values(fruits.map(nameFruits => nameFruits.name));
     return names;
     console.log(names);
-
-
 }
 
 /* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
@@ -78,7 +74,6 @@ NOTE: Call a function you previously wrote as a helper function.
 */
 
 function getFruitKeys(fruits) {
-    // Your code here
     let keysArr = [];
     keysArr = Object.keys(firstFruitObject(fruits));
     return keysArr;
@@ -95,8 +90,6 @@ console.log(getNutritionsKeys(fruits));
 */
 
 function getNutritionsKeys(fruits) {
-    // Your code here
-
     let newObj = {}
     newObj = firstFruitObject(fruits);
    // return newObj;
@@ -104,11 +97,8 @@ function getNutritionsKeys(fruits) {
     // let nutritionObject = {}
     // nutrtionObject = fruits.nutritions;
 
-
     let nutritionKeys = Object.keys(newObj.nutritions);
     return nutritionKeys;
-
-
 
 }
 

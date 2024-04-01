@@ -9,7 +9,6 @@ console.log(addKeyAndValueToAll(fruits, "inStock", true));
 */
 
 function addKeyAndValueToAll(array, key, value) {
-    // Your code here
     for(let i=0; i<array.length; i++){
         let obj = array[i];
         obj[key] = value;
@@ -25,7 +24,7 @@ console.log(addKeyAndValueToOne(fruits, "color", "red", 1));
 */
 
 function addKeyAndValueToOne(array, key, value, index) {
-    // Your code here
+
 }
 
 /* 09. `updateKeyName()` - Change the old key name to the new key name in all
