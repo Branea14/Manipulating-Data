@@ -43,7 +43,6 @@ function updateKeyName(array, oldKey, newKey) {
         delete obj[oldKey];
         return obj;
     });
-    //console.log(array)
 }
 
 /* 10. `updateIdValues()` - Change all of the "id" values to six-character
@@ -60,7 +59,7 @@ console.log(updateIdValues(fruits));
 */
 
 function updateIdValues(array) {
-    // Your code here
+
 }
 
 /* 11. `deleteKeysandValues()` - Delete the keyToDelete from the nutritions
@@ -71,7 +70,11 @@ console.log(deleteKeysAndValues(fruits, "sugar"));
 */
 
 function deleteKeysAndValues(array, keyToDelete) {
-    // Your code here
+    array.forEach(function(fruit){
+        const nutritions = fruit.nutritions;
+        delete nutritions[keyToDelete];
+    });
+    return array;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
